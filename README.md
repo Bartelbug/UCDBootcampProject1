@@ -61,7 +61,6 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 -Ansible allows the rapid deployment of multiple containers in a short period of time.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - Installs Docker
 - Installs ELK omn Elk server
 - Installs Filebeat and copies config file to webservers
@@ -86,9 +85,9 @@ These Beats allow us to collect the following information from each machine:
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the ELKwithWEB.yml, file to .
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the ELKwithWEB.yml, filebeat-config.yml, and metricbeat-config.yml to /etc/ansible.
+- Update the hosts file to include the elk group with ip of the elk server and the webservers group with the ip addresses of the webservers 
+- Run the playbook, and navigate to 40.124.29.79 to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
