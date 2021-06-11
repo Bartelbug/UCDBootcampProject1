@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _https://github.com/Bartelbug/UCDBootcampProject1/commit/3cbce9684df08b3672f730266de70a5a934cd8f0._
+  https://github.com/Bartelbug/UCDBootcampProject1/commit/3cbce9684df08b3672f730266de70a5a934cd8f0
 
 This document contains the following details:
 - Description of the Topologu
@@ -51,19 +51,21 @@ A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+| Jump Box | Yes                 | 10.0.0.1 10.0.0.2    |
 |          |                     |                      |
 |          |                     |                      |
 
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+-Ansible allows the rapid deployment of multiple containers in a short period of time.
 
 The playbook implements the following tasks:
 - _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Installs Docker
+- Installs ELK omn Elk server
+- Installs Filebeat and copies config file to webservers
+- Installs Metricbeat and copies config file to webservers
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
