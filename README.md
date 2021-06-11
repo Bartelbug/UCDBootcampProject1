@@ -31,22 +31,21 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name         | Function  | Internal IP | Public IP      | OS           |
+|--------------|-----------|-------------|----------------|--------------|
+| Bug-VM1      | Jumpbox   | 10.0.0.10   | 52.183.99.223  | Ubuntu 18.04 |
+| Bugweb1v2-VM | Webserver | 10.0.0.21   | 51.141.188.172 | Ubuntu 20.04 |
+| Bugweb2v2-VM | Webserver | 10.0.0.22   | 51.141.188.172 | Ubuntu 20.04 |
+| ELK-VM2      | ELK Stack | 10.0.0.31   | 40.124.29.79   | Ubuntu 20.04 |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
-
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+98.242.33.53
+Machines within the network can only be accessed by the Jumpbox.
+The ELK Stack is accessible from 98.242.33.53
 
 A summary of the access policies in place can be found in the table below.
 
