@@ -78,6 +78,7 @@ This ELK server is configured to monitor the following machines:
 We have installed the following Beats on these machines:
 - Filebeat
 - Metricbeat
+
 These Beats allow us to collect the following information from each machine:
 - Filebeat will monitor the systemlogs of the web servers, allowing us to see any login attempts or system configuration changes. Metricbeat will monitor system performance and load, allowing visibility on items like cpu load, network performance and storage usage.
 
