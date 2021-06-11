@@ -89,9 +89,3 @@ SSH into the control node and follow the steps below:
 - Update the hosts file to include the elk group with ip of the elk server and the webservers group with the ip addresses of the webservers 
 - Run the playbook, and navigate to 40.124.29.79 to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
-
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
