@@ -49,11 +49,11 @@ The ELK Stack is accessible from 98.242.33.53
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes                 | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name      | Port | Publicly Accessible | Allowed IP Addresses |
+|-----------|------|---------------------|----------------------|
+| Jumpbox   | 22   | Yes                 | 98.242.33.53         |
+| Webserver | 80   | Yes                 | 98.242.33.53         |
+| ELK Stack | 5601 | Yes                 | 98.242.33.53         |
 
 ### Elk Configuration
 
@@ -87,5 +87,5 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below:
 - Copy the ELKwithWEB.yml, filebeat-config.yml, and metricbeat-config.yml to /etc/ansible.
 - Update the hosts file to include the elk group with ip of the elk server and the webservers group with the ip addresses of the webservers 
-- Run the playbook, and navigate to 40.124.29.79 to check that the installation worked as expected.
+- Run the playbook, and navigate to 40.124.29.79:5601 to check that the installation worked as expected.
 
